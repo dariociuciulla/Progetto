@@ -4,7 +4,7 @@ import SwiftData
 struct AggiungiAtletaView: View {
     
     @Environment(\.dismiss) var dismiss
-    // ⭐️ Contesto del modello per salvare il nuovo oggetto nel database
+    //  Contesto del modello per salvare il nuovo oggetto nel database
     @Environment(\.modelContext) private var modelContext
     
     // Campi di input con stato locale
@@ -61,7 +61,7 @@ struct AggiungiAtletaView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Salva") {
                         if let eta = eta, let peso = peso, let altezza = altezza {
-                            // ⭐️ CREAZIONE E SALVATAGGIO DELL'OGGETTO ATLETA
+                            //  CREAZIONE E SALVATAGGIO DELL'OGGETTO ATLETA
                             let nuovoAtleta = Atleta(
                                 nome: nome,
                                 cognome: cognome,
